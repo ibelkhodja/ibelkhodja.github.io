@@ -1,0 +1,42 @@
+.name-header{
+	color: 	#8A9A5B;
+	font-family: Georgia ;
+	font-weight:bold;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 15px;
+
+}
+
+.welcome-header{
+	color:	#8A9A5B;
+	font-family: Georgia;
+	text-align: center;
+}
+
+p{
+	font-family: Georgia;
+}
+
+.resume-photo{
+	width: 300px;
+	object-fit: contain;
+	object-position: bottom;
+}
+
+.name-header, .resume-photo{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.div-box{
+	display:inline-block;
+}
+
+.website-header{
+	display:block;
+}
+
+
+
+/* cursor: pointer changes the cursor to pointer when hovering over anything (usually a button) */ 
