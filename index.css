@@ -23,6 +23,7 @@ p{
 	object-fit: contain;
 	object-position: bottom;
 	border-radius: 18px;
+	display:block;
 }
 
 
