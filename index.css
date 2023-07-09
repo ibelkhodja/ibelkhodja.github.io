@@ -24,10 +24,6 @@ p{
 	object-position: bottom;
 }
 
-.name-header, .resume-photo{
-	display: inline-block;
-	vertical-align: top;
-}
 
 .div-box{
 	display:inline-block;
