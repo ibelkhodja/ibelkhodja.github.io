@@ -18,7 +18,7 @@ p{
 	font-family: Georgia;
 }
 
-.resume-photo{
+.resume-photo-1{
 	width: 200px;
 	object-fit: contain;
 	object-position: bottom;
@@ -33,8 +33,18 @@ p{
 }
 
 .website-header{
-	display:block;
+	display:inline-block;
 }
+
+.signature {
+	display: inline-block;
+}
+
+.nav-bar{
+	display: inline-block;
+}
+
+
 
 
 
