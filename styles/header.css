@@ -9,7 +9,6 @@
 
 .resume-photo-1{
 	border-radius: 25px;
-	width: 75px;
 	height: 20px;
 }
 
@@ -30,5 +29,6 @@
 	display:flex;
 	flex: 1;
 	max-width: 400px;
+	margin-left: 20px;
 
 }
