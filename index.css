@@ -1,3 +1,21 @@
+.signature {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.nav-bar{
+	display: inline-block;
+	margin-right: 0px;
+
+}
+
+.resume-photo-1{
+	border-radius: 50px;
+	width: 40px;
+	margin-right: 50px;
+	
+}
+
 .name-header{
 	color: 	#8A9A5B;
 	font-family: Georgia ;
@@ -36,18 +54,7 @@ p{
 	display:inline-block;
 }
 
-.signature {
-	display: inline-block;
-}
 
-.nav-bar{
-	display: inline-block;
-}
-
-.resume-photo-1{
-	border-radius: 50px;
-	width: 40px;
-}
 
 
 
