@@ -8,8 +8,9 @@
 }
 
 .resume-photo-1{
-	border-radius: 50px;
+	border-radius: 25px;
 	width: 75px;
+	height: 20px;
 }
 
 .mid-sign{
@@ -17,8 +18,17 @@
 	width: 100px;
 }
 
+.right-sec{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .about-header, .experience-header, .contact-header, .conferences-header, .skills-header{
+	
 	color: white;
+	display:flex;
 	flex: 1;
 	max-width: 400px;
+
 }
