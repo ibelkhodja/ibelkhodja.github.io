@@ -2,12 +2,13 @@
 	display: inline-block;
 	border-radius: 50px;
 	width: 40px;
-	margin-right:auto;
+	
 }
 
 .signature {
 	display: inline-block;
 	margin-right: 500px;
+	margin-left: 300px;
 }
 
 .nav-bar{
