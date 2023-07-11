@@ -1,20 +1,12 @@
+.header{
+	display:grid;
+	grid-template-columns: 200px 200px;
+}
+
 .resume-photo-1{
-	display: inline-block;
 	border-radius: 50px;
-	width: 40px;
 	
-}
-
-.signature {
-	display: inline-block;
-	margin-right: 500px;
-	margin-left: 300px;
-}
-
-.nav-bar{
-	display: inline-block;
-	margin-right: 0px;
-
+	
 }
 
 
