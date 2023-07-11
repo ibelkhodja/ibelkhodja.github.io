@@ -1,6 +1,13 @@
+.resume-photo-1{
+	display: inline-block;
+	border-radius: 50px;
+	width: 40px;
+	margin-right: 100px;
+}
+
 .signature {
 	display: inline-block;
-	margin-left: 50px;
+	margin-right: 100px;
 }
 
 .nav-bar{
@@ -9,13 +16,6 @@
 
 }
 
-.resume-photo-1{
-	display: inline-block;
-	border-radius: 50px;
-	width: 40px;
-	margin-right: 50px;
-	
-}
 
 .name-header{
 	color: 	#8A9A5B;
