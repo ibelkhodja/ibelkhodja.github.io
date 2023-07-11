@@ -18,7 +18,7 @@ p{
 	font-family: Georgia;
 }
 
-.resume-photo-1{
+.resume-photo-2{
 	width: 200px;
 	object-fit: contain;
 	object-position: bottom;
@@ -27,12 +27,12 @@ p{
 }
 
 
-.div-box{
+.content{
 	display:block;
 	color: #8A9A5B;
 }
 
-.website-header{
+.header-photo{
 	display:inline-block;
 }
 
@@ -42,6 +42,11 @@ p{
 
 .nav-bar{
 	display: inline-block;
+}
+
+.resume-photo-1{
+	border-radius: 50px;
+	width: 40px;
 }
 
 
