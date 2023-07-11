@@ -1,6 +1,6 @@
 .header{
 	display:grid;
-	grid-template-columns: 100px 100px 100px 100px 100px;
+	grid-template-columns: 100px 1fr 2fr;
 }
 
 .resume-photo-1{
