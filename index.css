@@ -2,12 +2,16 @@
 	display:grid;
 	grid-template-columns: 100px 2fr 1fr 1fr 1fr 1fr 1fr;
 	height: 50px;
+	background-color: darkslateblue
 }
 
 .resume-photo-1{
 	border-radius: 50px;
 }
 
+.mid-sign, .about-header, .experience-header, .contact-header, .conferences-header, .skills-header{
+	color: white;
+}
 
 .name-header{
 	color: 	#00004C;
