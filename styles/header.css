@@ -3,16 +3,27 @@
 	flex-direction: row;
 	height: 50px;
 	align-items: center;
-	background-color: darkslateblue;
+	background-color: rgb(72, 61, 139);
 	justify-content: space-between;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-style:rgb(59, 51, 116);
+	z-index: 100;
+
 }
 
 .resume-photo-1{
 	border-radius: 25px;
-	height: 20px;
+	height: 45px;
+	margin-left: 20px;
+	
 }
 
-.mid-sign{
+.mid-sec{
 	color: white;
 	width: 100px;
 }
@@ -29,6 +40,7 @@
 	display:flex;
 	flex: 1;
 	max-width: 400px;
-	margin-left: 20px;
+	margin-left: 30px;
+	margin-right: 10px
 
 }

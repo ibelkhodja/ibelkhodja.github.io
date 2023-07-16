@@ -18,10 +18,10 @@
 
 
 .resume-photo-2{
-	width: 200px;
+	width: 250px;
 	object-fit: contain;
 	object-position: bottom;
-	border-radius: 30px;
+	border-radius: 150px;
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
