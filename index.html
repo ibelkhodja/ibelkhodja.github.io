@@ -8,21 +8,23 @@
 		<link rel = "stylesheet" href = "styles/header.css">
 		<link rel = "stylesheet" href = "styles/general.css">
 		<link rel = "stylesheet" href = "styles/content.css">
+		<link rel = "stylesheet" href = "styles/main-page.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+		<link rel = "icon" href = "favicon.ico">
 
 	</head>
 <body>
 
-	<div class="header-flex">
+	<header class="header-flex">
 		<div class ="left-sec">
 			<img class ="resume-photo-1" src = "resume-photo.jpeg">
 		</div>
 		<div class="mid-sec">
 			Ines
 		</div>
-		<div class = "right-sec">
+		<nav class = "right-sec">
 			<li class="about-header">
 				About
 			</li>
@@ -39,23 +41,27 @@
 				Contact
 			</li>
 
-		</div>
+		</nav>
 		
+	</header>
+	
+	<div class = "main-page">
+		<div class="name-header">
+		Ines Asma Belkhodja
+		</div>
+		<!-- this is for a link <a href= "" target= "_blank"> words on website</a> the target allows the link to be open
+		in another website page. important
+		put position absolute inside position relative -->
+	
+		<!-- to have a dot like bullet points &#183; in a paragraph text  
+		to have a check mark &#10003; -->
+		<div class = "welcome-header">
+		I am passionate about <span class = auto-type></span>
+		</div>
+		<img class = "resume-photo-2" src = "resume-photo.jpeg">
+
 	</div>
 	
-
-	<h1 class="name-header">
-	Ines A Belkhodja
-	</h1>
-	<!-- this is for a link <a href= "" target= "_blank"> words on website</a> the target allows the link to be open
-	in another website page. important -->
-
-	<!-- to have a dot like bullet points &#183; in a paragraph text  
-	to have a check mark &#10003; -->
-	<h2 class = "welcome-header">
-	I am a *autocomplete typwriter (3 things)...
-	</h2>
-	<img class = "resume-photo-2" src = "resume-photo.jpeg">
 
 	<div class = "content">
 
@@ -86,5 +92,23 @@
 			This is the paragraph of text for the skills I gained.
 		</p>
 	</div>
+
+	<header class=" footnote">
+		<a class="email" href = "belkh22i@mtholyoke.edu"> 
+			My Email
+		</a>
+
+	</header>
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed(".auto-type", {
+			strings:["coding", "Data Science", "Machine Learning", "Astrophysics"],
+			typeSpeed:100, 
+			backSpeed: 100,
+			loop: true,
+
+		})
+	</script>
+
 </body>
 </html>
