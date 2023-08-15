@@ -1,13 +1,15 @@
 .main-page{
 	padding-top:53px;
-	padding-bottom: 450px;
+	padding-bottom: 300px;
 	width: 100%;
+	position: relative;
+	z-index: 60;
 }
 
 .name-header{
 	position: relative;
 	font-size: 400.5%;
-	color: 	#00004C;
+	color: 	white;
 	font-family: Georgia ;
 	font-weight:bold;
 	left: 100px;
@@ -18,11 +20,18 @@
 .welcome-header{
 	position: relative;
 	font-size:200%;
-	color:	#00004C;
+	color:	white;
 	font-family: Georgia;
 	left: 175px;
 	top: 100px;
 	justify-content: center;
+}
+
+.overview-main{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+	margin: 150px auto 0px;
+	padding-left: 175px;
 	
 }
 
@@ -33,6 +42,7 @@
 	margin-right: 60px;
 	float: right;
 	margin-top: -85px;
+	;
 }
 
 /*in resume photo  object-fit: contain;

@@ -3,7 +3,7 @@
 	flex-direction: row;
 	height: 50px;
 	align-items: center;
-	background-color: rgb(72, 61, 139);
+	background-color: rgb(218, 190, 215);
 	justify-content: space-between;
 	position: fixed;
 	left: 0;
@@ -13,8 +13,6 @@
 	border-bottom-style: solid;
 	border-bottom-style:rgb(59, 51, 116);
 	z-index: 100;
-
-
 }
 
 .resume-photo-1{
