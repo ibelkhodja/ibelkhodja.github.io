@@ -1,0 +1,125 @@
+.sub-header-timeline{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+	text-align:center;
+	margin: auto;
+	margin-top: 40px;
+	position: relative;
+	z-index: 30;
+	font-size: 250%;
+}
+
+
+.experience-timeline{
+	position: relative;
+	width: 100%;
+	margin:auto;
+	margin-top: 50px;
+}
+
+.main-timeline-section .timeline-start,
+.main-timeline-section .timeline-end {
+background: pink;
+border-radius:100px;
+margin: 0 auto;
+width:30px;
+height:30px;
+z-index:60;
+}
+
+.main-timeline-section .center-line {
+position: absolute;
+width: 4px;
+height:100%;
+top: 0;
+left:50%;
+margin-left: -2px;
+background: pink;
+z-index: 20;
+}
+
+.timeline-article{
+width:100%;
+position:relative;
+margin:40px 0px;
+min-height: 135px;
+z-index: 60;
+}
+
+.timeline-article .experience-date{
+position: absolute;
+top:33%;
+left:50%;
+font-size:18px;
+margin-left: -150px;
+transform: translateY(50%);
+color:white;
+}
+
+.timeline-article .meta-date {
+position: absolute;
+top:50%;
+left: 50%;
+width:20px;
+height:20px;
+transform: translateY(-50%);
+margin-left: -11px;
+border-radius: 100%;
+background:#fff;
+border:1px solid pink;
+}
+
+.timeline-article .experience-text{
+position:absolute;
+box-shadow: 2px 2px 4px 0px #c1c1c1;
+border:1px solid pink;
+border-radius: 5px;
+background-color: #fff;
+width:40%;
+top:50%;
+transform: translateY(-50%);
+padding:8px;
+left:50%;
+margin-left:50px;
+}
+
+.content-left-container .experience-text{
+left:5%;
+margin-left: 0px;
+}
+
+.content-left-container .experience-date{
+margin-left: 50px;
+}
+
+.content-right-container .experience-text:before{
+content: " ";
+position:absolute;
+left:-10px;
+top:40%;
+transform: translateX(-50%);
+border:10px solid transparent;
+border-right-color:pink;
+display:block;
+}
+
+.content-left-container .experience-text:before{
+content: " ";
+position:absolute;
+top:40%;
+right:-30px;
+transform: translateX(-50%);
+border:10px solid transparent;
+border-left-color:pink;
+}
+
+@media (max-width:460px){
+.timeline-article.content-left-container .experience-text{
+left: -10px;
+}
+
+.timeline-article .experience-text p{
+height: 100px;
+overflow: hidden;
+}
+}

@@ -1,6 +1,6 @@
 .main-page{
 	padding-top:53px;
-	padding-bottom: 300px;
+	padding-bottom: 150px;
 	width: 100%;
 	position: relative;
 	z-index: 60;
@@ -19,7 +19,7 @@
 
 .welcome-header{
 	position: relative;
-	font-size:200%;
+	font-size:225%;
 	color:	white;
 	font-family: Georgia;
 	left: 175px;
@@ -30,18 +30,23 @@
 .overview-main{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: white;
+	font-size: 125%;
 	margin: 150px auto 0px;
 	padding-left: 175px;
-	
+	line-height: 1.5;
+}
+
+.overview-paragraph{
+	margin-bottom: 15px;
 }
 
 .resume-photo-2{
-	width: 450px;
+	width: 460px;
 	border-radius: 250px;
 	margin-left: auto;
 	margin-right: 60px;
 	float: right;
-	margin-top: -85px;
+	margin-top: -55px;
 	;
 }
 
