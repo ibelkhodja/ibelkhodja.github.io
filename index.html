@@ -27,27 +27,30 @@
 			Ines
 		</div>
 		<nav class = "right-sec">
-			<li class="about-header">
+			<a class="about-header" href = "#about">
 				About
-			</li>
-			<li class = "experience-header">
+			</a>
+			<a class = "experience-header " href = "#experiences">
 				Experiences
-			</li>
-			<li class = "conferences-header">
+			</a>
+			<a class = "conferences-header" href = "#conferences">
 				Conferences
-			</li>
-			<li class="skills-header">
+			</a>
+			<a class = "certificates-header" href = "#certificates">
+				Certificates
+			</a>
+			<a class="skills-header">
 				Skills
-			</li>
-			<li class ="contact-header">
+			</a>
+			<a class ="contact-header">
 				Contact
-			</li>
+			</a>
 
 		</nav>
 		
 	</header>
 	
-	<div class = "main-page">
+	<div class = "main-page" id = "about">
 		<canvas id="canvas"></canvas>
 		<div class="name-header">
 		Ines Asma Belkhodja
@@ -88,6 +91,8 @@
 		</div>
 
 	</div>
+
+	
 	
 
 	<div class = "content">
@@ -103,25 +108,10 @@
 			1 my own website of data modeling or teaching a concept
 			
 		</p>
-	
-			<div>
-				<span class="positions" style="font-weight: bold">Data Researcher</span> - JAXA: analyzing asteroid Phaethon's characteristics through data modeling
-			</div>
+
 			<div>
 				<span class="positions" style="font-weight: bold">Researcher Assistant</span> - Planeatary Science Institute: training and testing models of laser-induced spectral data of rocks by using different algorithms 
 			</div>
-		</p>
-		<h3 class = "sub-header">
-			Conferences
-		</h3>
-		<p class = "conference-info"> 
-			<div>
-				<span class="dates" style="font-weight: bold">March 2023</span> - Lunar and Planetary Science Conference (LPSC) in Houston, Texas
-			</div>
-			<div>
-				<span class="dates" style="font-weight: bold">January 2023</span> - Conference for Undergraduate Women in Physics (CUWiP) @ Brown University
-			</div>
-			
 		</p>
 		<h3 class = "sub-header"> 
 			Technical Skills
@@ -135,24 +125,6 @@
 			</div>
 		</p>
 		<h3 class = "sub-header">
-			Certificates
-		</h3>
-		<p> 
-			<div>
-				<span class="dates" style="font-weight: bold">April 2022</span> - CodePath iOS Course: Certificate of Achievement 
-			</div>
-			<div>
-				<span class="dates" style="font-weight: bold">August 2021</span> - University of Arizona: Astronomy: Exploring Time and Space
-			</div>
-			<div>
-				<span class="dates" style="font-weight: bold">August 2021</span> - Stanford University: Machine Learning
-			</div>
-			<div>
-				<span class="dates" style="font-weight: bold">June 2020</span> - University of Michigan: Python for Everybody and Python Data Structures
-			</div>
-
-		</p>
-		<h3 class = "sub-header">
 			Published Papers
 		</h3>
 		<p> 
@@ -160,67 +132,151 @@
 		</p>
 	</div>
 
-	<h3 class = "sub-header-timeline">
+	<h3 class = "sub-header-timeline-exp" id = "experiences">
 		Experiences
 	</h3>
 
-	<p> 
+	
 	<div class="experience-timeline">
 		<div class="row">
 		<div class="col-md-12 col-sm-12 col-xs-12">
 		<section class="main-timeline-section">
-		<div class="timeline-start">
-		</div>
+		<div class="timeline-start"></div>
 		<div class="center-line"></div>
 		<div class="timeline-content">
-		<div class="timeline-article content-right-container">
-		<div class="experience-date">
-		<span>August 2023</span>
-		</div>
-		<div class="meta-date"></div>
-		<div class="experience-text">
-		<p>My experience here bullet points
-		</p>
-		</div>
-		</div>
-		<div class="timeline-article content-left-container">
-		<div class="experience-date">
-		<span>May 2023 - July 2023</span>
-		</div>
-		<div class="meta-date"></div>
-		<div class="experience-text">
-		<p>My experience here bullet points
-		</p>
-		</div>
-		</div>
-		<div class="timeline-article content-right-container">
-		<div class="experience-date">
-		<span>date here</span>
-		</div>
-		<div class="meta-date"></div>
-		<div class="experience-text">
-		<p>My experience here bullet points
-		</p>
-		</div>
-		</div>
-		<div class="timeline-article content-left-container">
-		<div class="experience-date">
-		<span>date here</span>
-		</div>
-		<div class="meta-date"></div>
-		<div class="experience-text">
-		<p>
-			My experience here bullet points
-		</p>
-		</div>
-		</div>
+
+			<div class="timeline-article content-right-container">
+			<div class="experience-date"><span>August 2023</span></div>
+			<div class="meta-date"></div>
+			<div class="experience-text">
+			<p>
+				<div>
+					<span class = "experience-name" style="font-weight: bold">Data Researcher @ JAXA</span>
+				</div>
+				<div class = "experience-description">
+					I work with JAXA's mission called Discovery+. They are looking into Phaethon's characteristics. 
+					I help out with modelling its reflectance, wavelength, distance from the Sun, and time. Using Jupyter Notebooks,
+					I look for significant trends in plots so JAXA can one day land a probe on Phaethon.
+				</div>
+			</p>
+			</div>
+			</div>
+			
+			<div class="timeline-article content-left-container">
+			<div class="experience-date">
+			<span>May 2023 - July 2023</span>
+			</div>
+			<div class="meta-date"></div>
+			<div class="experience-text">
+			<p>
+				<div>
+					<span class = "experience-name" style="font-weight: bold">Research Assistant @ PSI</span>
+				</div>
+				<div class = "experience-description">
+					I used machine learning to train and test the data gathered last summer. I used two data 
+					algorithms and compared which one gave better predicting results after training the data. 
+					I incorporated Venus atmosphere with rocks and laser-induced spectroscopy. Venus atmosphere
+					is tremendously hard to imitate; therefore, our lab is one of the lucky ones to have it and 
+					publish results with it. I used Abobe Illustrator to format our tables and graphs for our 
+					paper publishing soon. 
+				</div>
+			</p>
+			</div>
+			</div>
+
+			<div class="timeline-article content-right-container">
+			<div class="experience-date">
+			<span>May 2023</span>
+			</div>
+			<div class="meta-date"></div>
+			<div class="experience-text">
+			<p>
+				<div>
+					<span class = "experience-name" style="font-weight: bold">Reunion Worker @ MHC Alumnae Association </span>
+				</div>
+				<div class = "experience-description">
+					For two weeks, I helped out with returning alumnae with class photos and giving them directions. 
+					I managed the graduating class of 2023 before their Commencement with time and directions.
+				</div>
+			</p>
+			</div>
+			</div>
+
+			<div class="timeline-article content-left-container">
+			<div class="experience-date">
+			<span>January 2022 - Present</span>
+			</div>
+			<div class="meta-date"></div>
+			<div class="experience-text">
+			<p>
+				<div>
+					<span class = "experience-name" style="font-weight: bold">Research Assisant @ MHC & PSI</span>
+				</div>
+				<div class = "experience-description">
+					I worked with manipulating 1000+ files using pandas. Through code, I put a header and inserted 
+					the numbers gathered from the spectrometer.
+				</div>
+			</p>
+			</div>
+			</div>
+
+			<div class="timeline-article content-right-container">
+				<div class="experience-date-right">
+				<span>September 2022 - Present</span>
+				</div>
+				<div class="meta-date"></div>
+				<div class="experience-text">
+				<p>
+					<div>
+						<span class = "experience-name" style="font-weight: bold">Resident Advisor @ MHC Residential Life </span>
+					</div>
+					<div class = "experience-description">
+						In my team for our residential hall, we worked together and created monthly, community events, such as Tye-Dye, 
+						making pickles in the backyard, movie nights, baking Valentine's Day cookies, etc. If any of my residents need someone 
+						to talk to, I am always open to help them out. 
+					</div>
+				</p>
+				</div>
+			</div>
 		</div>
 		<div class="timeline-end"></div>
 		</section>
 		</div>
 		</div>
-		</div>
-	
+	</div>
+
+	<h3 class = "sub-header-timeline-conf" id = "conferences">
+		Conferences
+	</h3>
+
+	<section class="time-line">
+		<canvas id="canvas"></canvas>
+		<ul class="timeline">
+			<div class="center-line-conf"></div>
+			<li data-year="January 2023" data-text="Conference for Undergraduate Women in Physics (CUWiP) @ Brown University"></li>
+			<li data-year="March 2023" data-text="Lunar and Planetary Science Conference (LPSC) in Houston, Texas"></li>
+			<li data-year="April 2023" data-text="Hudson River Undergraduate Conference @ MHC (volunteer)"></li>
+			<li data-year="August 2023" data-text="Rewriting the Code: Virtual Summit Conference"></li>
+		</ul>
+   </section>
+
+
+   <h3 class = "sub-header-timeline-cert" id = "certificates">
+	Certifications
+	</h3>
+   <section class="time-line-cert">
+	<canvas id="canvas"></canvas>
+	<ul class="timeline-cert">
+		<div class="center-line-cert"></div>
+		<li data-year="August 2023" data-text="Mathworks: MATLAB Onramp "></li>
+		<li data-year="August 2023" data-text="SQL"></li>
+		<li data-year="April 2022" data-text="CodePath iOS Course: Certificate of Achievement"></li>
+		<li data-year="August 2021" data-text="University of Arizona: Astronomy: Exploring Time and Space"></li>
+		<li data-year="June 2020" data-text="University of Michigan: Python for Everybody and Python Data Structures"></li>
+	</ul>
+</section>
+
+
 
 	<header class=" footnote">
 		<a class="email" href = "belkh22i@mtholyoke.edu"> 
