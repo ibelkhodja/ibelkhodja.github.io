@@ -7,13 +7,15 @@
 	z-index: 30;
 }
 
-.sub-header{
+.published-papers{
 	font-size: 250%;
+	color: lightcyan;
+}
+
+.personal-projects{
+	font-size: 250%;
+	color: lightgoldenrodyellow;
 }
 
 
-.email{
-	text-decoration: none;
-	color:white;
-}
 

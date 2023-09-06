@@ -11,9 +11,12 @@
 		<link rel = "stylesheet" href = "styles/main-page.css">
 		<link rel = "stylesheet" href = "styles/timeline.css">
 		<link rel = "stylesheet" href = "styles/slideshow.css">
+		<link rel = "stylesheet" href = "styles/footer.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<link rel = "icon" href = "favicon.ico">
 
 
@@ -23,7 +26,7 @@
 
 	<header class="header-flex">
 		<div class ="left-sec">
-			<img class ="resume-photo-1" src = "resume-photo.jpeg">
+			<img class ="resume-photo-1" src = "resume-photo.jpg">
 		</div>
 		<div class="mid-sec">
 			Ines
@@ -44,7 +47,7 @@
 			<a class="skills-header" href = "#skills">
 				Skills
 			</a>
-			<a class ="contact-header">
+			<a class ="contact-header" href = #contact>
 				Contact
 			</a>
 
@@ -66,7 +69,7 @@
 		<div class = "welcome-header">
 		I am passionate about <span class = auto-type></span>
 		</div>
-		<img class = "resume-photo-2" src = "resume-photo.jpeg">
+		<img class = "resume-photo-2" src = "resume-photo.jpg">
 		<div class="overview-main">
 			<div class = "overview-paragraph">
 				I am a rising junior majoring in Computer science and Astronomy at Mount Holyoke College in South Hadley, Massachusetts.
@@ -100,22 +103,29 @@
 	<div class = "content">
 
 
-		<h3 class = "sub-header">
+		<h3 class = "personal-projects">
 			Personal Projects
 		</h3>
 		<p>
-			add images here 
-			1 from codepath blanch 
-			1 from jaxa 
-			1 my own website of data modeling or teaching a concept
+			<div>
+				<div>
+					<span class="positions" style="font-weight: bold">August 2023 - Present</span>
+				</div>
+				<div>
+					Asteroid Phaethon Data Modeling with Python and Jupyter Notebooks
+				</div>
+		
+				<div style = "padding-top: 25px">
+					More individual projects coming soon!
+				</div>
+				
+			</div>
 			
 		</p>
 
-			<div>
-				<span class="positions" style="font-weight: bold">Researcher Assistant</span> - Planeatary Science Institute: training and testing models of laser-induced spectral data of rocks by using different algorithms 
-			</div>
+			
 		</p>
-		<h3 class = "sub-header">
+		<h3 class = "published-papers">
 			Published Papers
 		</h3>
 		<p> 
@@ -264,6 +274,7 @@
 		<li data-year="April 2022" data-text="CodePath iOS Course: Certificate of Achievement"></li>
 		<li data-year="August 2023" data-text="SQL"></li>
 		<li data-year="August 2023" data-text="Mathworks: MATLAB Onramp "></li>
+		<li data-year="September 2023" data-text="Mathworks: MATLAB Fundamentals "></li>
 	</ul>
 	</section>
 
@@ -290,6 +301,21 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Footer -->
+	<footer id = "contact">
+		<canvas id="canvas"></canvas>
+		<div class="social">
+            <h6>Contact</h6>
+            <a href="mailto: belkh22i@mtholyoke.edu"><i class="fa fa-envelope"></i> </a>
+			<a href="https://github.com/ibelkhodja"><i class="fa fa-github"></i> </a>
+			<a href="https://linkedin.com/in/ines-belkhodja-29228422b"><i class="fa fa-linkedin"></i> </a>
+
+          </div>
+	  </footer>
+
+
+
 
 	<script>
 		let sliderImages = document.querySelectorAll(".slide"),
@@ -343,14 +369,6 @@
 		startSlide();
 	</script>
 
-
-
-	<header class=" footnote">
-		<a class="email" href = "belkh22i@mtholyoke.edu"> 
-			My Email
-		</a>
-
-	</header>
 	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 	<script>
 		var typed = new Typed(".auto-type", {

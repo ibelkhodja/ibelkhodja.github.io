@@ -1,6 +1,6 @@
 .sub-header-slideshow-skills{
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	color: lightseagreen;
+	color: rgb(17, 162, 154);
 	text-align:center;
 	margin-top: 400px;
 	position: relative;
@@ -63,3 +63,5 @@
 .slider-nav a:hover {
 	opacity: 1;
 }
+
+
