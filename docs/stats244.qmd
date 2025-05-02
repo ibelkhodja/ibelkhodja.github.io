@@ -1,0 +1,22 @@
+---
+title: "Stats244 Projects"
+format: 
+  html:
+    css: styles/content.css
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+---
+
+```{=html}
+<header class="header-flex">
+  <div class="left-sec">
+    <span class="mid-sec">Ines</span>
+  </div>
+  <nav class="right-sec">
+    <a class="about-header" href="index.html">About</a>
+    <a class="stats244-header" href="stats244.html">Stats244</a>
+  </nav>
+</header>

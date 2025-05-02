@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: .   # Outputs to same directory instead of _site/
+
+format:
+  html:
+    toc: false
+    css: 
+      - styles/header.css
+      - styles/general.css
+      - styles/content.css
+
+website:
+  title: "Ines Belkhodja"
+  navbar:
+    left:
+      - href: index.html
+        text: "Home"
+      - href: stats244.html
+        text: "Stats244"
