@@ -36,13 +36,23 @@
       z-index: -1;
     }
     
-    /* Main content container */
+    /* Main content container - UPDATED WITH PROPER SPACING */
     .main-content {
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 100px auto 0; /* Added top margin to push content below header */
       padding: 20px;
       position: relative;
       z-index: 1;
+    }
+
+    /* Ensure header has proper spacing */
+    .header-flex {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background-color: rgba(10, 25, 47, 0.9); /* Semi-transparent background */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -72,16 +82,15 @@
     </nav>
   </header>
 
-  <!-- Main content -->
+  <!-- Main content - Now properly spaced below header -->
   <div class="main-content">
     <div class="stats-project">
-      <h1>Computational Statistics (STAT244)</h1>
+      <h1 style="margin-top: 20px;">Computational Statistics (STAT244)</h1> <!-- Added margin-top -->
       
       <p><strong>Spring 2025</strong><br>
       <em>Professor Laura Lyman</em><br>
       <em>Mount Holyoke College</em></p>
 
-      
       <div class="final-project">
         <h2>Final Project: SAT Scores vs College GPA</h2>
         
