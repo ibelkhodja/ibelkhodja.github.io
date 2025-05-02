@@ -1,22 +1,63 @@
 ---
-title: "Stats244 Projects"
+title: "Stats244 - Computational Statistics"
 format: 
   html:
-    css: styles/content.css
+    css: 
+      - styles/content.css
+      - styles/stats244.css
     include-in-header:
       - text: |
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+          <style>
+            .stats-project {
+              background-color: rgba(191, 207, 255, 0.1);
+              border-radius: 10px;
+              padding: 25px;
+              margin-bottom: 30px;
+              border-left: 4px solid #bfcfff;
+            }
+            .research-question {
+              font-style: italic;
+              color: #bfcfff;
+              margin: 20px 0;
+              padding: 15px;
+              background-color: rgba(191, 207, 255, 0.05);
+              border-radius: 5px;
+            }
+            .methodology-list {
+              list-style-type: none;
+              padding-left: 0;
+            }
+            .methodology-list li {
+              padding: 8px 0;
+              position: relative;
+              padding-left: 25px;
+            }
+            .methodology-list li:before {
+              content: "▹";
+              position: absolute;
+              left: 0;
+              color: #bfcfff;
+            }
+          </style>
 ---
 
-```{=html}
+\`\`\`{=html}
+
 <header class="header-flex">
-  <div class="left-sec">
-    <span class="mid-sec">Ines</span>
-  </div>
-  <nav class="right-sec">
-    <a class="about-header" href="index.html">About</a>
-    <a class="stats244-header" href="stats244.html">Stats244</a>
-  </nav>
+
+::: left-sec
+```         
+<span class="mid-sec">Ines</span>
+```
+:::
+
+<nav class="right-sec">
+
+<a class="about-header" href="index.html">About</a> <a class="stats244-header" href="stats244.html">Stats244</a>
+
+</nav>
+
 </header>

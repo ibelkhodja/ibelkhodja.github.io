@@ -45,4 +45,11 @@
 
 }
 
+/* Add hover styles separately for better control */
+.stats244-header:hover {
+    color: #bfcfff;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 
