@@ -14,6 +14,36 @@ website:
 
 format:
   html:
+    include-in-header: 
+      - text: |
+          <style>
+            /* Your custom styles */
+            body {
+              background-color: #0a192f;
+              color: white;
+              font-family: 'Inconsolata', monospace;
+            }
+            /* Header styles */
+            .header-flex {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 20px;
+              background-color: rgba(10, 25, 47, 0.9);
+            }
+            /* Add all other custom styles */
+          </style>
+    include-before-body: 
+      - text: |
+          <header class="header-flex">
+            <div class="left-sec">
+              <span class="mid-sec">Ines</span>
+            </div>
+            <nav class="right-sec">
+              <a class="about-header" href="index.html">About</a>
+              <a class="stats244-header" href="stats244.html">Stats244</a>
+            </nav>
+          </header>
     theme: cosmo
     css: styles.css
     toc: true
