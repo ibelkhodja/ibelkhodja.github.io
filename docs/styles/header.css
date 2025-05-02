@@ -33,7 +33,7 @@
 	justify-content: space-between;
 }
 
-.about-header, .experience-header, .contact-header, .conferences-header, .skills-header, .certificates-header{
+.about-header, .experience-header, .contact-header, .conferences-header, .skills-header, .certificates-header, .stats244-header{
 	
 	color: white;
 	display:flex;
@@ -44,3 +44,5 @@
 	text-decoration: none;
 
 }
+
+
