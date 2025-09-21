@@ -124,3 +124,37 @@
     color: var(--text);
     margin-top: 0.5rem;
 }
+
+.publications-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.publication-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--light);
+}
+
+.publication-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+    font-style: italic;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
