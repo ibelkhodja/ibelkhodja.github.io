@@ -1,418 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ines Belkhodja | Computer Science & Astronomy</title>
-		<link rel = "stylesheet" href = "index.css">
-		<link rel = "stylesheet" href = "styles/header.css">
-		<link rel = "stylesheet" href = "styles/general.css">
-		<link rel = "stylesheet" href = "styles/content.css">
-		<link rel = "stylesheet" href = "styles/main-page.css">
-		<link rel = "stylesheet" href = "styles/timeline.css">
-		<link rel = "stylesheet" href = "styles/slideshow.css">
-		<link rel = "stylesheet" href = "styles/footer.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<link rel="icon" href="favicon.ico">
-	</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ines Belkhodja | Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                Ines Belkhodja
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="header-buttons">
-                <a href="#" class="cv-button">Download CV</a>
-                <button class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+  <!-- HEADER -->
+  <header class="main-header">
+    <nav class="navbar">
+      <h1 class="logo">Ines Belkhodja</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <canvas id="canvas"></canvas>
-		<div class="hero-content">
-			<div class="hero-text-content">
-				<h1 class="hero-title">Ines Belkhodja</h1>
-				<p class="hero-subtitle">Computer Science & Astronomy Student at Mount Holyoke College</p>
-				<p class="hero-text">I am passionate about <span class="auto-type"></span></p>
-			</div>
-			<div class="hero-image-container">
-				<img src="new-resume-photo.png" alt="Ines Belkhodja" class="hero-image">
-			</div>
-		</div>
-		
-    </section>
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-text-content">
+        <h2 class="hero-title">Computer Science & Astronomy</h2>
+        <p class="hero-subtitle">Postbac Researcher at Caltech</p>
+        <p class="hero-text">I am passionate about <span class="auto-type"></span></p>
+      </div>
+      <div class="hero-image-container">
+        <!-- 👉 put your headshot in /images/ folder -->
+        <img src="images/new-resume-photo.png" alt="Ines Belkhodja" class="hero-image">
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a rising junior majoring in Computer Science and Astronomy at Mount Holyoke College in South Hadley, Massachusetts.</p>
-                    <p>By being involved in different aspects of my college, I gained a strong interest for a tight-knit community. I am an RA, the co-President of Computer Science Society, a data research assistant in the Astronomy Lab, a Reunion worker, and a Physics TA/Grader.</p>
-                    <p>When I am not studying or planning events, I like to read and watch mysteries or thrillers, or go outside for a walk.</p>
-                    <p>Communication is important, but understanding another person's idea is key. Born in France but originally from Algeria, I lived in 5 different countries. My experience helped me open my eyes to various cultures and how people express their ideas differently.</p>
-                </div>
-            </div>
+  <!-- EXPERIENCE -->
+  <section class="section block-green" id="experience">
+    <div class="section-content">
+      <h2>Experience</h2>
+      
+      <div class="card">
+        <h3>NASA Goddard – NSSDCA</h3>
+        <p>Worked on planetary science data archiving and analysis.</p>
+      </div>
 
-            <!-- Research Interests Section -->
-            <h3 class="section-title" style="margin-top: 4rem;">Research Interests</h3>
-            <div class="interests-grid">
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Astrophysics</h3>
-                    <p>Asteroid composition and behavior analysis</p>
-                </div>
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Data analysis and predictive modeling</p>
-                </div>
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Data Science</h3>
-                    <p>Extracting insights from complex datasets</p>
-                </div>
-                <div class="interest-card">
-                    <div class="interest-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Software Development</h3>
-                    <p>Building tools for scientific research</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Research Section -->
-    <section class="section" id="research">
-        <div class="container">
-            <h2 class="section-title">Research & Projects</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3 class="research-title">Asteroid Phaethon Data Modeling</h3>
-                    <p class="research-date">August 2023 - Present</p>
-                    <p class="research-desc">Working with JAXA's Discovery+ mission to model Phaethon's characteristics using Python and Jupyter Notebooks.</p>
-                    <div class="research-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Project Site</a>
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                    </div>
-                </div>
-                
-                <div class="research-card">
-                    <h3 class="research-title">Venus Atmosphere Research</h3>
-                    <p class="research-date">May 2023 - July 2023</p>
-                    <p class="research-desc">Machine learning applications for spectroscopy data analysis in Venus-like atmospheric conditions.</p>
-                    <div class="research-links">
-                        <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                    </div>
-                </div>
-                
-                <div class="research-card">
-                    <h3 class="research-title">Data Processing Automation</h3>
-                    <p class="research-date">January 2022 - Present</p>
-                    <p class="research-desc">Manipulating 1000+ files using pandas to process spectrometer data with automated header insertion.</p>
-                    <div class="research-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- PROJECTS -->
+  <section class="section block-dark" id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+    </div>
+  </section>
 
-    <!-- Publications Section -->
-    <section class="section" id="publications">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <ul class="publications-list">
-                <li class="publication-item">
-                    <h3 class="publication-title">Analysis of Asteroid Phaethon's Spectral Data</h3>
-                    <p class="publication-authors">Belkhodja, I., Tanaka, S., Yamamoto, T.</p>
-                    <p class="publication-venue">Journal of Planetary Science, 2023 (Under Review)</p>
-                    <div class="publication-links">
-                        <a href="#"><i class="fas fa-file-pdf"></i> Preprint</a>
-                    </div>
-                </li>
-                <li class="publication-item">
-                    <h3 class="publication-title">Machine Learning Approaches for Venusian Rock Classification</h3>
-                    <p class="publication-authors">Smith, J., Belkhodja, I., Johnson, L.</p>
-                    <p class="publication-venue">LPSC Proceedings, 2023</p>
-                    <div class="publication-links">
-                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                        <a href="#"><i class="fas fa-presentation"></i> Slides</a>
-                    </div>
-                </li>
-                <li class="publication-item">
-                    <h3 class="publication-title">Automated Data Processing for Spectrometer Outputs</h3>
-                    <p class="publication-authors">Belkhodja, I.</p>
-                    <p class="publication-venue">Mount Holyoke College Research Symposium, 2022</p>
-                    <div class="publication-links">
-                        <a href="#"><i class="fas fa-file-pdf"></i> Poster</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+  <!-- CONTACT -->
+  <section class="section block-light" id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ines@example.com">ines@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/inesbelkhodja" target="_blank">linkedin.com/in/inesbelkhodja</a></p>
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">August 2023 - Present</div>
-                        <h3>Data Researcher @ JAXA</h3>
-                        <p>Working with JAXA's Discovery+ mission to analyze Phaethon's characteristics through data modeling.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">May 2023 - July 2023</div>
-                        <h3>Research Assistant @ PSI</h3>
-                        <p>Applied machine learning to train and test data, incorporating Venus atmosphere simulations with rocks and laser-induced spectroscopy.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">September 2022 - Present</div>
-                        <h3>Resident Advisor @ MHC Residential Life</h3>
-                        <p>Fostered community through events and provided support for residents.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">January 2022 - Present</div>
-                        <h3>Research Assistant @ MHC & PSI</h3>
-                        <p>Data processing and analysis using pandas for large spectrometer datasets.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Ines Belkhodja</p>
+  </footer>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <i class="fab fa-python skill-icon"></i>
-                    <h3>Python</h3>
-                </div>
-                
-                <div class="skill-item">
-                    <i class="fas fa-database skill-icon"></i>
-                    <h3>SQL</h3>
-                </div>
-                
-                <div class="skill-item">
-                    <i class="fab fa-java skill-icon"></i>
-                    <h3>Java</h3>
-                </div>
-                
-                <div class="skill-item">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h3>MATLAB</h3>
-                </div>
-                
-                <div class="skill-item">
-                    <i class="fab fa-html5 skill-icon"></i>
-                    <h3>HTML/CSS</h3>
-                </div>
-                
-                <div class="skill-item">
-                    <i class="fas fa-chart-line skill-icon"></i>
-                    <h3>Data Analysis</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <span>belkh22i@mtholyoke.edu</span>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt contact-icon"></i>
-                        <span>Mount Holyoke College, South Hadley, MA</span>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-graduation-cap contact-icon"></i>
-                        <span>Computer Science & Astronomy</span>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="mailto:belkh22i@mtholyoke.edu" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    
-                    <a href="https://github.com/ibelkhodja" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    
-                    <a href="https://linkedin.com/in/inesbelkhodja" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    
-                    <a href="#" class="social-link">
-                        <i class="ai ai-google-scholar"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Ines Belkhodja</p>
-            <p class="copyright">Computer Science & Astronomy | Mount Holyoke College</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        // Typed.js initialization
-        var typed = new Typed(".auto-type", {
-            strings: ["coding", "data science", "machine learning", "astrophysics"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true
-        });
-
-        // Star background animation
-        function Star(x, y, r, color) {
-            this.x = x;
-            this.y = y;
-            this.r = r;
-            this.rChange = 0.015;
-            this.color = color;
-        }
-
-        Star.prototype = {
-            constructor: Star,
-            render: function() {
-                context.beginPath();
-                context.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false);
-                context.shadowBlur = 8;
-                context.shadowColor = "white";
-                context.fillStyle = this.color;
-                context.fill();
-            },
-            update: function() {
-                if (this.r > 2 || this.r < .8) {
-                    this.rChange = -this.rChange;
-                }
-                this.r += this.rChange;
-            }
-        }
-
-        var canvas = document.getElementById("canvas");
-        var context = canvas.getContext("2d");
-
-        var C_WIDTH = canvas.width = document.body.offsetWidth;
-        var C_HEIGHT = canvas.height = document.body.offsetHeight;
-
-        function randomColor() {
-            var arrColors = ["ffffff", "ffecd3", "bfcfff"];
-            return "#" + arrColors[Math.floor((Math.random() * 3))];
-        }
-
-        var arrStars = [];
-        for (i = 0; i < 400; i++) {
-            var randX = Math.floor((Math.random() * C_WIDTH) + 1);
-            var randY = Math.floor((Math.random() * C_HEIGHT) + 1);
-            var randR = Math.random() * 1.7 + .5;
-
-            var star = new Star(randX, randY, randR, randomColor());
-            arrStars.push(star);
-        }
-
-        function update() {
-            for (i = 0; i < arrStars.length; i++) {
-                arrStars[i].update();
-            }
-        }
-
-        function animate() {
-            update();
-            context.clearRect(0, 0, C_WIDTH, C_HEIGHT);
-            for (var i = 0; i < arrStars.length; i++) {
-                arrStars[i].render();
-            }
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Dark/Light mode toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = themeToggle.querySelector('i');
-        
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            themeIcon.classList.toggle('fa-moon');
-            themeIcon.classList.toggle('fa-sun');
-            themeIcon.classList.add('rotate');
-            setTimeout(() => {
-                themeIcon.classList.remove('rotate');
-            }, 1000);
-            
-            // Save theme preference
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
-        });
-        
-        // Check for saved theme preference
-        if (localStorage.getItem('darkMode') === 'true') {
-            document.body.classList.add('dark-mode');
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        }
-    </script>
+  <!-- JavaScript -->
+  <script src="js/typed.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
