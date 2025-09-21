@@ -113,6 +113,71 @@
       color: white;
       transform: translateY(-2px);
     }
+    /* GENERAL SECTION STYLING */
+    .section {
+      min-height: 100vh;       /* Full-page feel */
+      padding: 6rem 2rem;
+      display: flex;
+      align-items: center;     /* Vertically center */
+      justify-content: center;
+      position: relative;
+    }
+
+    /* SECTION COLOR THEMES */
+    #about {
+      background: linear-gradient(135deg, #e8f5e9, #ffffff);
+    }
+
+    #experience {
+      background: linear-gradient(135deg, #d7f2ec, #f1f8f5);
+    }
+
+    #projects {
+      background: linear-gradient(135deg, #1e3c32, #2d5a4a);
+      color: white;
+    }
+
+    #contact {
+      background: linear-gradient(135deg, #f5f7fa, #e2ebf0);
+    }
+
+    /* FADE & SLIDE ANIMATIONS */
+    .section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* SECTION SEPARATORS */
+    .section::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100 100"><polygon fill="%23ffffff" points="0,100 100,0 100,100"/></svg>') no-repeat;
+      background-size: cover;
+    }
+
+    /* Override for dark section so divider blends */
+    #projects::after {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100 100"><polygon fill="%2314261f" points="0,100 100,0 100,100"/></svg>') no-repeat;
+      background-size: cover;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
 
     /* HEADER STYLES */
     .main-header {
@@ -667,7 +732,7 @@
         loop: true
       });
     });
-    
+
     // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
@@ -677,7 +742,7 @@
         });
       });
     });
-    
+
     // Dark/Light Mode Toggle
     const themeToggle = document.getElementById("theme-toggle");
     themeToggle.addEventListener("click", () => {
@@ -691,6 +756,28 @@
         icon.classList.add("fa-moon");
       }
     });
+
+    // Scroll-triggered fade/slide animations
+    const sections = document.querySelectorAll(".section");
+
+    const observerOptions = {
+      threshold: 0.25, // triggers when 25% of section is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // remove observer after animation
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
   </script>
+
 </body>
 </html>
