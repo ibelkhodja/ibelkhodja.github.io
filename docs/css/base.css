@@ -50,3 +50,27 @@ body.dark-mode {
   margin-left: 1rem;
 }
 
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.section-block {
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 20px;
+}
+
+.section-block:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: rgba(255,255,255,0.2); /* subtle divider */
+}
