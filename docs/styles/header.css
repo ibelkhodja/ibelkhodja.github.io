@@ -1,55 +1,66 @@
-.header-flex{
-	display:flex;
-	flex-direction: row;
-	height: 50px;
-	align-items: center;
-	background-color: rgb(218, 190, 215);
-	justify-content: space-between;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-style:rgb(59, 51, 116);
-	z-index: 100;
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.resume-photo-1{
-	border-radius: 25px;
-	height: 45px;
-	margin-left: 20px;
-	
+.left-sec {
+    flex: 1;
 }
 
-.mid-sec{
-	color: white;
-	width: 100px;
+.mid-sec {
+    flex: 2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.right-sec{
-	display:flex;
-	align-items: center;
-	justify-content: space-between;
+.right-sec {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
 }
 
-.about-header, .experience-header, .contact-header, .conferences-header, .skills-header, .certificates-header, .stats244-header{
-	
-	color: white;
-	display:flex;
-	flex: 1;
-	max-width: 400px;
-	margin-left: 30px;
-	margin-right: 10px;
-	text-decoration: none;
-
+.resume-photo-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--light);
 }
 
-/* Add hover styles separately for better control */
-.stats244-header:hover {
-    color: #bfcfff;
-    text-decoration: underline;
-    text-underline-offset: 5px;
+.right-sec a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
 }
 
+.right-sec a:hover {
+    color: var(--accent);
+}
 
+.right-sec a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.right-sec a:hover::after {
+    width: 100%;
+}

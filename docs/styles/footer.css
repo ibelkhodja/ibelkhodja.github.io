@@ -1,54 +1,31 @@
-.h6{
-	margin-top: 0;
-	margin-bottom: 12px;
-	font-weight: 700;
-	font-size: 18px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	position: relative;
-	z-index: 70;
-	color: white;
-  }
-  .ul{
-	list-style-type: none;
-	line-height: 50px;
-	font-size: 15px;
-	margin-bottom: 0;
-  }
-  .ul a{
-	color: #fff;
-	text-decoration: none;
-	transition: 0.3s;
-  }
-  .ul a:hover{
-	opacity: 0.8;
-	color: #eee;
-  }
-  .social{
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	padding-left: -200px;
-	padding-bottom: 0px;
-	border-top: 1px solid #eee;
-	margin-top: 50px;
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
 
-  }
-  .social a{
-	font-size: 22px;
-	width: 45px;
-	height: 45px;
-	line-height: 39px;
-	display: inline-block;
-	border-radius: 50%;
-	border: 3px solid white;
-	box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
-	margin: 10px;
-	color: #fff;
-	opacity: 0.7;
-	transition: 0.3s ease-in-out;
-  }
-.social a:hover{
-	opacity: 0.9;
-	box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
-  }
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social h6 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.social a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: var(--accent);
+}

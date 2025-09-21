@@ -1,21 +1,29 @@
-.content{
-	color: white;
-	line-height: 20px;
-	text-align:center;
-	margin: auto;
-	position: relative;
-	z-index: 30;
+.content {
+    color: var(--text);
+    line-height: 1.6;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 30;
+    padding: 2rem;
+    max-width: 800px;
 }
 
-.published-papers{
-	font-size: 250%;
-	color: lightcyan;
+.published-papers {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
 }
 
-.personal-projects{
-	font-size: 250%;
-	color: lightgoldenrodyellow;
+.personal-projects {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
 }
 
-
-
+.positions {
+    color: var(--secondary);
+    font-weight: 500;
+}

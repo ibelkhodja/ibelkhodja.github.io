@@ -1,55 +1,49 @@
-.main-page{
-	padding-top:53px;
-	padding-bottom: 150px;
-	width: 100%;
-	position: relative;
-	z-index: 60;
+.main-page {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.name-header{
-	position: relative;
-	font-size: 400.5%;
-	color: 	white;
-	font-family: Georgia ;
-	font-weight:bold;
-	left: 100px;
-	top: 50px;
-
+.name-header {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
 }
 
-.welcome-header{
-	position: relative;
-	font-size:225%;
-	color:	white;
-	font-family: Georgia;
-	left: 175px;
-	top: 100px;
-	justify-content: center;
+.welcome-header {
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
 }
 
-.overview-main{
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	color: white;
-	font-size: 125%;
-	margin: 150px auto 0px;
-	padding-left: 175px;
-	line-height: 1.5;
+.auto-type {
+    color: var(--accent);
+    font-weight: 600;
 }
 
-.overview-paragraph{
-	margin-bottom: 15px;
+.resume-photo-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2rem auto;
+    border: 4px solid var(--light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.resume-photo-2{
-	width: 460px;
-	border-radius: 250px;
-	margin-left: auto;
-	margin-right: 60px;
-	float: right;
-	margin-top: -55px;
-	;
+.overview-main {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/*in resume photo  object-fit: contain;
-	object-position: bottom;
-	display:block; */
+.overview-paragraph {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: left;
+}
