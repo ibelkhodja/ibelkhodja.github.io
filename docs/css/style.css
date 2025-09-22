@@ -62,11 +62,13 @@ body {
   position: relative;
 }
 
+/* SECTION TITLE STYLES */
+
 .section-title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--primary);
+  color: var(--accent-light); /* Light mint green */
   position: relative;
 }
 
@@ -83,7 +85,31 @@ body {
 }
 
 .dark-mode .section-title {
-  color: var(--accent);
+  color: var(--accent-light); /* Keep light mint green */
+}
+
+/* Hero title stays white */
+.hero-title {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.dark-mode .hero-title {
+  color: white;
+}
+
+/* Hero title stays white */
+.hero-title {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.dark-mode .hero-title {
+  color: white;
 }
 
 .btn {
@@ -550,16 +576,6 @@ body {
   background-position: center;
 }
 
-/* Fix project title color in light mode */
-#projects .section-title {
-  color: var(--primary); /* This should be dark green in light mode */
-}
-
-/* Dark mode styles */
-.dark-mode #projects {
-  background: var(--gradient-1);
-  color: white;
-}
 
 .dark-mode #projects::before {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
@@ -687,15 +703,15 @@ body {
   color: white;
 }
 
-/* Typewriter text colors */
+/* TYPEWRITER TEXT COLORS */
 .auto-type {
-  color: var(--accent);
+  color: var(--accent); /* Dark green in light mode */
   font-weight: 700;
   font-size: 1.4rem;
 }
 
 .dark-mode .auto-type {
-  color: white;
+  color: var(--accent-light); /* Light green in dark mode (#7ab8a5) */
 }
 
 /* CONTACT STYLES */
