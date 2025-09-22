@@ -68,7 +68,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--accent-light); /* Light mint green */
+  color: var(--accent); /* Light mint green */
   position: relative;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .dark-mode .section-title {
-  color: var(--accent-light); /* Keep light mint green */
+  color: var(--accent-light); /* Light green that matches header in dark mode */
 }
 
 /* Hero title stays white */
@@ -94,6 +94,15 @@ body {
   color: white;
   margin-bottom: 1rem;
   line-height: 1.2;
+}
+
+/* Specific project title styling */
+#projects .section-title {
+  color: var(--accent); /* Medium green for projects in light mode */
+}
+
+.dark-mode #projects .section-title {
+  color: var(--accent-light); /* Light green for projects in dark mode */
 }
 
 .dark-mode .hero-title {
@@ -285,7 +294,6 @@ body {
 }
 
 /* HERO STYLES */
-/* HERO STYLES - FULL SCREEN */
 .hero {
   padding: 0;
   background: var(--gradient-1);
@@ -379,8 +387,8 @@ body {
 
 .hero-image {
   width: 100%;
-  max-width: 400px;
-  height: 600px; 
+  max-width: 450px;
+  height: 550px; 
   border-radius: 50%;  /* true circle */
   object-fit: cover;
   object-position: center top;
@@ -554,7 +562,7 @@ body {
 
 /* PROJECTS STYLES */
 #projects {
-  background: var(--card-bg);
+  background: var(--light);
   color: var(--text);
   position: relative;
   overflow: hidden;
@@ -577,8 +585,9 @@ body {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.dark-mode #projects .section-title {
-  color: white; /* White in dark mode */
+.dark-mode #projects {
+  background: var(--gradient-1); /* Dark green gradient in dark mode */
+  color: white;
 }
 
 .projects-grid {
