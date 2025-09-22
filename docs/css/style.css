@@ -84,10 +84,6 @@ body {
   border-radius: 2px;
 }
 
-.dark-mode .section-title {
-  color: var(--accent-light); /* Light green that matches header in dark mode */
-}
-
 /* Hero title stays white */
 .hero-title {
   font-size: 3.5rem;
