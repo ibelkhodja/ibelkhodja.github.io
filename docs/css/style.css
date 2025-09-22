@@ -360,12 +360,6 @@ body {
   line-height: 1.6;
 }
 
-.auto-type {
-  color: var(--accent-light);
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
 .hero-buttons {
   display: flex;
   gap: 1.5rem;
