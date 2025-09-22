@@ -353,14 +353,15 @@ body {
 
 .hero-image {
   width: 100%;
-  max-width: 450px;
-  height: 550px; /* Taller than wide for oval */
-  border-radius: 50% / 35%; /* Oval shape */
+  max-width: 480px;
+  height: 520px; /* closer to square = more circular */
+  border-radius: 50% / 45%; /* slight oval, almost circular */
   object-fit: cover;
   object-position: center top;
   border: 5px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: var(--transition);
+  margin-top: 5px; /* moves image down */
 }
 
 .hero-image:hover {
