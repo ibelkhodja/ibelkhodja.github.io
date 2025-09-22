@@ -261,17 +261,17 @@ body {
 /* HERO STYLES */
 /* HERO STYLES - FULL SCREEN */
 .hero {
-  padding: 0; /* Remove padding */
+  padding: 0;
   background: var(--gradient-1);
   color: white;
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content vertically and horizontally */
-  margin: 0; /* Remove any margins */
+  justify-content: center;
+  margin: 0;
   left: 0;
 }
 
@@ -291,9 +291,9 @@ body {
   max-width: 100%;
   padding: 0 5%;
   width: 100%;
-  height: 100%; /* Make container full height */
+  height: 100%;
   display: flex;
-  align-items: center; /* Center content vertically */
+  align-items: center;
 }
 
 .hero-content {
@@ -306,8 +306,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  height: 100%; /* Make content full height */
-  padding: 2rem 0; /* Add some vertical padding */
+  height: 100%;
+  padding: 2rem 0;
 }
 
 .hero-title {
@@ -348,40 +348,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Make container full height */
+  height: 100%;
 }
 
 .hero-image {
   width: 100%;
   max-width: 500px;
-  height: 550px;
-  border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+  height: 500px; /* Equal height for perfect ellipse */
+  border-radius: 50%; /* Perfect elliptical circle */
   object-fit: cover;
   object-position: center top;
   border: 5px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: var(--transition);
-  transform: perspective(800px) rotateY(5deg);
 }
 
 .hero-image:hover {
-  transform: perspective(800px) rotateY(0deg) translateY(-8px);
+  transform: translateY(-8px); /* Simple hover effect */
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
   border-color: rgba(255, 255, 255, 0.4);
-}
-
-/* Floating animation for the image */
-@keyframes float {
-  0%, 100% {
-    transform: perspective(800px) rotateY(5deg) translateY(0);
-  }
-  50% {
-    transform: perspective(800px) rotateY(5deg) translateY(-15px);
-  }
-}
-
-.hero-image {
-  animation: float 6s ease-in-out infinite;
 }
 
 /* Responsive adjustments */
@@ -396,14 +381,14 @@ body {
   
   .hero-image {
     max-width: 400px;
-    height: 450px;
+    height: 400px; /* Maintain equal dimensions */
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: auto; /* Allow height to adjust on mobile */
-    min-height: 100vh; /* Still at least full screen height */
+    height: auto;
+    min-height: 100vh;
     padding: 5rem 0;
   }
   
@@ -428,8 +413,7 @@ body {
   
   .hero-image {
     max-width: 320px;
-    height: 350px;
-    border-radius: 35% 65% 65% 35% / 45% 35% 65% 55%;
+    height: 320px; /* Maintain equal dimensions */
   }
   
   .hero-buttons {
@@ -437,7 +421,7 @@ body {
   }
   
   .hero-image-container {
-    height: auto; /* Reset height on mobile */
+    height: auto;
   }
 }
 
@@ -869,4 +853,14 @@ body {
   .hero-subtitle {
     font-size: 1.2rem;
   }
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Override for when JavaScript is enabled */
+.js-enabled {
+  scroll-behavior: auto;
 }
