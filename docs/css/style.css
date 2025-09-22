@@ -700,13 +700,13 @@ body {
 
 /* TYPEWRITER TEXT COLORS */
 .auto-type {
-  color: var(--accent); /* Dark green in light mode */
+  color: #103f33; /* Dark green for light mode */
   font-weight: 700;
   font-size: 1.4rem;
 }
 
 .dark-mode .auto-type {
-  color: var(--accent-light); /* Light green in dark mode (#7ab8a5) */
+  color: #7cc2ad; /* Light green for dark mode */
 }
 
 /* CONTACT STYLES */

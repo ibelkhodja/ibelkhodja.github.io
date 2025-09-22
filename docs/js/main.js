@@ -9,79 +9,97 @@ let typedInstance = null;
 
 // Function to restart typewriter with proper colors
 function restartTypewriter() {
-    if (typedInstance) {
-      typedInstance.destroy();
-    }
-    
-    if (typeof Typed !== 'undefined') {
-      // Check current theme and set appropriate color
-      const isDarkMode = document.body.classList.contains("dark-mode");
-      const textColor = isDarkMode ? "#7ab8a5" : "#4c8577"; // Light green for dark, dark green for light
-      
-      // Apply color to the typewriter element
-      const typewriterElement = document.querySelector(".auto-type");
+  if (typedInstance) {
+    typedInstance.destroy();
+  }
+  
+  // Check if Typed is loaded
+  if (typeof Typed === 'undefined') {
+    console.error('Typed.js not loaded yet');
+    setTimeout(restartTypewriter, 100); // Try again in 100ms
+    return;
+  }
+  
+  // Check current theme and set appropriate color
+  const isDarkMode = document.body.classList.contains("dark-mode");
+  const textColor = isDarkMode ? "#7ab8a5" : "#4c8577";
+  
+  // Apply color to the typewriter element
+  const typewriterElement = document.querySelector(".auto-type");
+  if (typewriterElement) {
+    typewriterElement.style.color = textColor;
+  }
+  
+  // Create new typed instance
+  typedInstance = new Typed(".auto-type", {
+    strings: ["transients", "data analysis", "machine learning in astronomy", "astronomical visualization"],
+    typeSpeed: 70,
+    backSpeed: 40,
+    loop: true,
+    // Ensure color is applied when typing starts
+    onBegin: function(self) {
       if (typewriterElement) {
         typewriterElement.style.color = textColor;
       }
-      
-      // Create new typed instance
-      typedInstance = new Typed(".auto-type", {
-        strings: ["transients", "data analysis", "machine learning in astronomy", "astronomical visualization"],
-        typeSpeed: 70,
-        backSpeed: 40,
-        loop: true,
-        // Ensure color is applied when typing starts
-        onBegin: function(self) {
-          self.cursor.style.display = 'inline';
-          if (typewriterElement) {
-            typewriterElement.style.color = textColor;
-          }
-        },
-        // Ensure color is maintained after each string is typed
-        onStringTyped: function(arrayPos, self) {
-          if (typewriterElement) {
-            typewriterElement.style.color = textColor;
-          }
-        }
-      });
+    },
+    // Ensure color is maintained after each string is typed
+    onStringTyped: function(arrayPos, self) {
+      if (typewriterElement) {
+        typewriterElement.style.color = textColor;
+      }
     }
-  }
-  
-  // Dark/Light Mode Toggle with typewriter restart
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-      const icon = themeToggle.querySelector("i");
-      
-      if (document.body.classList.contains("dark-mode")) {
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-        localStorage.setItem('theme', 'dark');
-      } else {
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-        localStorage.setItem('theme', 'light');
-      }
-      
-      // Restart typewriter effect with correct colors
-      restartTypewriter();
-    });
-  }
-  
-  // Initialize typewriter on page load
-  document.addEventListener("DOMContentLoaded", function () {
-    // Check for saved theme preference first
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add("dark-mode");
-      if (themeToggle) {
-        themeToggle.querySelector("i").classList.remove("fa-moon");
-        themeToggle.querySelector("i").classList.add("fa-sun");
-      }
+  });
+}
+
+// Dark/Light Mode Toggle with typewriter restart
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const icon = themeToggle.querySelector("i");
+    
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+      localStorage.setItem('theme', 'dark');
+    } else {
+      icon.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+      localStorage.setItem('theme', 'light');
     }
     
-    // Then initialize typewriter with correct colors
+    // Restart typewriter effect with correct colors
     restartTypewriter();
   });
+}
+
+// Initialize typewriter on page load
+document.addEventListener("DOMContentLoaded", function() {
+  // Check for saved theme preference first
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add("dark-mode");
+    if (themeToggle) {
+      const icon = themeToggle.querySelector("i");
+      if (icon) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      }
+    }
+  }
+  
+  // Wait for Typed.js to load
+  if (typeof Typed !== 'undefined') {
+    restartTypewriter();
+  } else {
+    // If not loaded yet, wait for it
+    const checkTyped = setInterval(function() {
+      if (typeof Typed !== 'undefined') {
+        clearInterval(checkTyped);
+        restartTypewriter();
+      }
+    }, 100);
+  }
+});
+
 
 // Smooth Scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
