@@ -93,19 +93,61 @@ body {
 }
 
 /* ABOUT SECTION STYLES */
+#about {
+  background: var(--light);
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%231e3c32' fill-opacity='0.03' d='M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+}
+
+.dark-mode #about {
+  background: var(--gradient-1);
+  color: white;
+}
+
 .about-content {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .about-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
-  color: var(--text-color);
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.dark-mode .about-text {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .about-text p {
   margin-bottom: 1.5rem;
+}
+
+/* Update the existing about styles to be more specific */
+#about .section-title {
+  color: var(--accent);
+  position: relative;
+  z-index: 1;
+}
+
+.dark-mode #about .section-title {
+  color: var(--accent-light);
 }
 
 /* Specific project title styling */
