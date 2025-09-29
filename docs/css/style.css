@@ -92,6 +92,22 @@ body {
   line-height: 1.2;
 }
 
+/* ABOUT SECTION STYLES */
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
 /* Specific project title styling */
 #projects .section-title {
   color: var(--accent); /* Medium green for projects in light mode */
